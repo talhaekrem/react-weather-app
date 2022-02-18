@@ -11,3 +11,9 @@
 - 'Get Weather In My Location' butonuyla tarayıcı, konumunuzu algılayıp hava durumu tahminlerini getircektir. *Bunun için tarayıcı üzerinden konum erişimine izin vermeniz gerekmektedir.*
 - İçinde olduğumuz gün siyah kenarlıkla işaretlenmiştir.
 - Hava durumuna ait detayları görüntülemek için ilgili karta tıklamamız yeterlidir.
+
+### Kullanılan Teknolojiler
+- React JS
+- React Hooks
+- Global State yönetimi için Context Api
+- OpenWeatherMap Api
