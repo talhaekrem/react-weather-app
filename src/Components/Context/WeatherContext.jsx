@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation } from './LocationContext';
 //api key
-import data from '../../appkey.json';
+import data from '../../App_Key.json';
 //create context
 const WeatherContext = createContext();
 

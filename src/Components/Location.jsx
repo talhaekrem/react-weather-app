@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { useLocation } from './Context/LocationContext';
-import Cities from '../TurkeyCities.json';
+import Cities from '../Turkey_Cities.json';
 function Location() {
   const { location,setLocation } = useLocation();
   const [map, setMap] = useState(`https://www.google.com/maps/@${location.lat},${location.lon},12z`);

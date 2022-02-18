@@ -5,7 +5,6 @@ import moonPhase from '../../assets/img/moon-phase.jfif';
 function WeatherDetail({ detail, setDetail, setSelected }) {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
-    console.log(detail);
     //ilk başta null ise detay kısmı gözükmesin diye
     if (detail !== null) {
       setVisible(true);
