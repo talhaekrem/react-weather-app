@@ -1,0 +1,39 @@
+.card {
+    background-color: rgba(237, 237, 237, .1);
+    border-radius: .125rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: .5rem .75rem;
+    border: 1px solid transparent;
+}
+
+.selected-weather {
+    border: 1px solid rgba(128, 0, 128, .8);
+    background-color: rgba(128, 0, 128, .5);
+    box-shadow: rgba(128, 0, 128, 0.12) 0px 1px 3px, rgba(128, 0, 128, 0.24) 0px 1px 2px;
+}
+.today-weather{
+    border: 1px solid black;
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.card-title {
+    color: #010101;
+    margin: 0;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.temp-max {
+    font-weight: 600;
+}
+
+.seperator {
+    margin: 0 .25rem;
+}

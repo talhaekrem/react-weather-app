@@ -1,0 +1,128 @@
+.detailMain {
+    width: 100%;
+    background-color: white;
+    border-radius: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    margin: 2rem 0;
+}
+
+.detailHeader {
+    padding: .5rem .75rem;
+    background-color: rgba(128, 0, 128, .5);
+    border-radius: .5rem .5rem 0 0;
+    border: 1px solid rgba(128, 0, 128, .8);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.detailTitle{
+    margin: 0;
+    color: white;
+    font-weight: 300;
+}
+.detailBody {
+    border: 1px solid gray;
+    border-top: none;
+    border-radius: 0 0 .5rem .5rem;
+    padding: .5rem .75rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.detailCard {
+    border-radius: .5rem;
+    background-color: rgba(237, 237, 237, .1);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: .5rem .75rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.detailCardTitle {
+    margin: 0;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
+
+.detailCardTitle>h4 {
+    margin: 0;
+    font-size: 1.125rem;
+    padding-bottom: .5rem;
+}
+
+.detailRow {
+    width: 100%;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: .5rem 0;
+}
+
+.detailRow:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.detailRow span {
+    font-weight: 300;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+    color: #0000EE;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #0000EE;
+    width: 20px;
+    height: 20px;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: #555;
+    color: #fff;
+    text-align: left;
+    padding: .5rem .75rem;
+    border-radius: 6px;
+    font-size: .75rem;
+    /* Position the tooltip text */
+    position: absolute;
+    z-index: 1;
+    top: -290px;
+    left: 140%;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.tooltip .tooltiptext img{
+    width: 300px;
+    height: auto;
+}
+.tooltip .tooltiptext p{
+    margin: 0;
+}
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 95%;
+    right: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent #555 transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
