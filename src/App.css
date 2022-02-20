@@ -28,7 +28,9 @@
     align-items: center;
     justify-content: space-between;
 }
-
+.locationTab{
+    width: 200px;
+}
 .selectArea {
     display: flex;
     flex-direction: column;
