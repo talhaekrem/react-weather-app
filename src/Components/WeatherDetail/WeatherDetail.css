@@ -84,6 +84,7 @@
     border: 1px solid #0000EE;
     width: 20px;
     height: 20px;
+    line-height: 20px;
 }
 
 .tooltip .tooltiptext {
@@ -97,7 +98,7 @@
     /* Position the tooltip text */
     position: absolute;
     z-index: 1;
-    top: -290px;
+    top: -300px;
     left: 140%;
     opacity: 0;
     transition: opacity 0.3s;

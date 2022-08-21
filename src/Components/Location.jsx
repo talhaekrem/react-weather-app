@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import { useLocation } from './Context/LocationContext';
 import Cities from '../Turkey_Cities.json';
+import {Button} from 'thunderui';
+import 'thunderui/dist/index.css';
+
 function Location() {
   const { location, setLocation } = useLocation();
   const [map, setMap] = useState(`https://www.google.com/maps/@${location.lat},${location.lon},12z`);
@@ -34,10 +37,20 @@ function Location() {
         </select>
       </div>
       <div className='locationTab'>
+        {/* <Button 
+        text="See Location"
+        type="text"
+        size="small"
+        role="link"/>  */}
         <a href={map} target="_blank" rel='noreferrer'>See Location</a>
       </div>
       <div className='locationTab'>
-        <button onClick={handleClick}>Get Weather In My Location</button>
+        <Button 
+        onClick={handleClick} 
+        color="secondary"
+        text="Get Weather In My Location"
+        type="outline"
+        size="small"/>
       </div>
     </div>
   )
