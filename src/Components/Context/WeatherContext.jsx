@@ -1,7 +1,5 @@
 import { createContext, useContext, useState, useEffect } from "react";
 import { useLocation } from './LocationContext';
-//api key
-import data from '../../App_Key.json';
 //create context
 const WeatherContext = createContext();
 
@@ -15,7 +13,7 @@ export const WeatherProvider = ({ children }) => {
     const [weather, setWeather] = useState(null);
     //&lang=tr isteğe bağlı dili değiştirebilirsin
     useEffect(() => {
-        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${location.lat}&lon=${location.lon}&exclude=${part}&appid=${data.appid}&units=metric`)
+        fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${location.lat}&lon=${location.lon}&exclude=${part}&appid=${process.env.REACT_APP_OPEN_WEATHER_MAP_API_KEY}&units=metric`)
             .then(resp => resp.json())
             .then(json => setWeather(json))
     }, [location]);
