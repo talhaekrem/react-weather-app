@@ -5,7 +5,7 @@
 #### `npm install` ile önce gerekli paketleri indirmelisiniz. Sonra `npm start` ile uygulamayı başlatabilisiniz. http://localhost:3000/ adresinde çalışacaktır.
 
 ### Uygulama Görünümü
-![app-view](weather-app-view.png)
+![app-view](forecast-app-view.png)
 - Sol üstteki dropdowndan şehri seçtiğimizde hava durumu tahminleri geliyor olacaktır
 - Dropdownda seçtiğimiz şehrin tam lokasyonunu dilersek 'See Location' linki ile Google Maps üzerinden görebiliriz.
 - 'Get Weather In My Location' butonuyla tarayıcı, konumunuzu algılayıp hava durumu tahminlerini getircektir. *Bunun için tarayıcı üzerinden konum erişimine izin vermeniz gerekmektedir.*
@@ -15,5 +15,7 @@
 ### Kullanılan Teknolojiler
 - React JS
 - React Hooks
-- Global State yönetimi için Context Api
+- Context Api (Global state yönetimi için)
 - OpenWeatherMap Api
+- HTML
+- CSS
